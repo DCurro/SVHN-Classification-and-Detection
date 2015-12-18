@@ -22,24 +22,3 @@ for x=1:width-31
 end
 
 fclose(fileListId);
-
-% 
-% imageScaleHalf = imresize(image, 0.5);
-% height = size(imageScaleHalf,1);
-% width = size(imageScaleHalf,2);
-% 
-% for x=1:2:width-32
-%     for y=1:height-32
-%         imwrite(imcrop(image,[x y 31 31]),[outputPath,name,'_',int2str(x),'_',int2str(y),'_0.5',ext]);
-%     end
-% end
-% 
-% imageScaleQuarter = imresize(image, 0.25);
-% height = size(imageScaleQuarter,1);
-% width = size(imageScaleQuarter,2);
-% 
-% for x=1:1:width-32
-%     for y=1:height-32
-%         imwrite(imcrop(image,[x y 31 31]),[outputPath,name,'_',int2str(x),'_',int2str(y),'_0.25',ext]);
-%     end
-% end
